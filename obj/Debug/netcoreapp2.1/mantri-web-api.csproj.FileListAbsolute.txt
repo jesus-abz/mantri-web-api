@@ -1,0 +1,16 @@
+C:\Users\jesus\Desktop\mantri-web-api\bin\Debug\netcoreapp2.1\mantri-web-api.deps.json
+C:\Users\jesus\Desktop\mantri-web-api\bin\Debug\netcoreapp2.1\mantri-web-api.runtimeconfig.json
+C:\Users\jesus\Desktop\mantri-web-api\bin\Debug\netcoreapp2.1\mantri-web-api.runtimeconfig.dev.json
+C:\Users\jesus\Desktop\mantri-web-api\bin\Debug\netcoreapp2.1\mantri-web-api.dll
+C:\Users\jesus\Desktop\mantri-web-api\bin\Debug\netcoreapp2.1\mantri-web-api.pdb
+C:\Users\jesus\Desktop\mantri-web-api\obj\Debug\netcoreapp2.1\mantri-web-api.csprojAssemblyReference.cache
+C:\Users\jesus\Desktop\mantri-web-api\obj\Debug\netcoreapp2.1\mantri-web-api.RazorAssemblyInfo.cache
+C:\Users\jesus\Desktop\mantri-web-api\obj\Debug\netcoreapp2.1\mantri-web-api.RazorAssemblyInfo.cs
+C:\Users\jesus\Desktop\mantri-web-api\obj\Debug\netcoreapp2.1\mantri-web-api.AssemblyInfoInputs.cache
+C:\Users\jesus\Desktop\mantri-web-api\obj\Debug\netcoreapp2.1\mantri-web-api.AssemblyInfo.cs
+C:\Users\jesus\Desktop\mantri-web-api\obj\Debug\netcoreapp2.1\mantri-web-api.RazorTargetAssemblyInfo.cache
+C:\Users\jesus\Desktop\mantri-web-api\obj\Debug\netcoreapp2.1\mantri-web-api.dll
+C:\Users\jesus\Desktop\mantri-web-api\obj\Debug\netcoreapp2.1\mantri-web-api.pdb
+C:\Users\jesus\Desktop\mantri-web-api\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\jesus\Desktop\mantri-web-api\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\jesus\Desktop\mantri-web-api\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
