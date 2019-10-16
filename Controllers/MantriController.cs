@@ -41,7 +41,6 @@ namespace mantri_web_api.Controllers
         public List<Mantri> GetMantriList()
         {
             List<Mantri> mantris = new List<Mantri>();
-
             SqlConnection conn = new SqlConnection(connectionstring);
             SqlCommand cmd = new SqlCommand("select * from tpl_mantri", conn);
             conn.Open();
