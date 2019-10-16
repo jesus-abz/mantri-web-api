@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using mantri_web_api.Modules;
 using mantri_web_api.Dependencies;
 using System.Data.SqlClient;
-using System;
 
 namespace mantri_web_api.Controllers
 {
@@ -12,8 +11,6 @@ namespace mantri_web_api.Controllers
     public class MantriController : IMantri
     {
         List<Mantri> listOfMantri => new List<Mantri>
-
-        string connectionstring = @"data source=DESKTOP-0P99JQ4\SQLEXPRESS; initial catalog=db_mantri; user id=mantri; password=mantri41";
         {
             new Mantri
             {
@@ -31,8 +28,10 @@ namespace mantri_web_api.Controllers
             },
         };
 
-        [HttpGet("{id}")]
+        string connectionstring = @"data source=DESKTOP-0P99JQ4\SQLEXPRESS; initial catalog=db_mantri; user id=mantri; password=mantri41";
+                
 
+        [HttpGet("{id}")]
         public Mantri GetMantri(int id)
         {
             return listOfMantri[id];
@@ -41,24 +40,24 @@ namespace mantri_web_api.Controllers
         [HttpGet]
         public List<Mantri> GetMantriList()
         {
-            List<Mantri> listOfMantri = new List<Mantri>();
+            List<Mantri> mantris = new List<Mantri>();
 
-            SqlConnection conn = new SqlConnection(connectionString);
-            SqlCommand cmd = new SqlCommand("select * from dbo.tpl_mantri", conn);
+            SqlConnection conn = new SqlConnection(connectionstring);
+            SqlCommand cmd = new SqlCommand("select * from tpl_mantri", conn);
             conn.Open();
             SqlDataReader reader = cmd.ExecuteReader();
 
-            while()
+            while(reader.Read())
             {
                 Mantri mantri = new Mantri
                 {
                     Id = reader.GetInt64(reader.GetOrdinal("id"))
                 };
-                listOfMantri.Add(mantri);
+                mantris.Add(mantri);
             }
 
             conn.Close();
-            return listOfMantri;
+            return mantris;
         }
     }
 }

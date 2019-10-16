@@ -4,6 +4,7 @@ namespace mantri_web_api.Modules
 {
     public class Mantri
     {
+        Int64 id;
         string nombre;
         string clase1;
         string clase2;
@@ -31,8 +32,9 @@ namespace mantri_web_api.Modules
 
         public Mantri(){}
 
-        public Mantri(string nombre, string clase1, string clase2, string clase3, string elementomain, string elementosec1, string elementosec2, string elementosec3, int fase, string prevmorf, int salud, int defensa, int energia, int ataque, int velocidad, string imagen, string descripcion, string datosextra, string compatibilidad1, string compatibilidad2, string compatibilidad3, string compatibilidad4, string compatibilidad5, string compatibilidadtext)
+        public Mantri(Int64 id, string nombre, string clase1, string clase2, string clase3, string elementomain, string elementosec1, string elementosec2, string elementosec3, int fase, string prevmorf, int salud, int defensa, int energia, int ataque, int velocidad, string imagen, string descripcion, string datosextra, string compatibilidad1, string compatibilidad2, string compatibilidad3, string compatibilidad4, string compatibilidad5, string compatibilidadtext)
         {
+            this.id = id;
             this.nombre = nombre;
             this.clase1 = clase1;
             this.clase2 = clase2;
@@ -83,5 +85,6 @@ namespace mantri_web_api.Modules
         public string Compatibilidad4 { get => compatibilidad4; set => compatibilidad4 = value; }
         public string Compatibilidad5 { get => compatibilidad5; set => compatibilidad5 = value; }
         public string Compatibilidadtext { get => compatibilidadtext; set => compatibilidadtext = value; }
+        public long Id { get => id; set => id = value; }
     }
 }
