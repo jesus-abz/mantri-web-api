@@ -51,6 +51,7 @@ namespace mantri_web_api.Controllers
                 Mantri mantri = new Mantri
                 {
                     Id = reader.GetInt64(reader.GetOrdinal("id"))
+                    
                 };
                 mantris.Add(mantri);
             }
